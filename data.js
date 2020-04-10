@@ -1,11 +1,5 @@
 let table_multiplications = [
   ['1x1',1],
-  ['1x2',2]
-];
-
-
-let table_multiplications1 = [
-  ['1x1',1],
   ['1x2',2],
   ['1x3',3],
   ['1x4',4],
