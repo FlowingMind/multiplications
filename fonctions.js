@@ -14,7 +14,7 @@ function traitement_question() {
   document.getElementById('label_question'). style.visibility = 'visible';
   document.getElementById('input_reponse'). style.visibility = 'visible';
   document.getElementById('bouton_reponse'). style.visibility = 'visible';
-  document.getElementById('reste_a_tester'). style.visibility = 'hidden';
+  document.getElementById('reste_a_tester'). style.visibility = 'visible';
   document.getElementById('label_commentaires'). style.visibility = 'hidden';
 
   //effacer le contenu de l'input reponse
@@ -34,6 +34,13 @@ function traitement_question() {
   console.log('question', table_multiplications[liste_elements_restants[indice_test]][0]);
   console.log('reponse attendue', table_multiplications[liste_elements_restants[indice_test]][1]);
   document.getElementById('label_question').innerHTML = table_multiplications[liste_elements_restants[indice_test]][0];
+
+  //afficher l'indicateur d'avancement
+  let indicateur = liste_elements_restants.length + '/' + table_multiplications.length;
+  console.log('liste_elements_restants.length',liste_elements_restants.length);
+  console.log('table_multiplications.length',table_multiplications.length);
+  console.log('indicateur',indicateur);
+  document.getElementById('reste_a_tester').innerHTML = indicateur;
 
 }
 
