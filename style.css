@@ -1,3 +1,66 @@
+
+/*Sélecteur de tous les éléments du document*/
+* {
+  font-family: 'Teko', sans-serif;
+  font-size: 160%;
+  background-color: white;
+}
+
+/*top level selector*/
+HTML{
+  /*border: 5px solid purple;*/
+}
+
+/*Sélecteur du  Body de toutes les pages du document*/
 body {
-  font-family: open-sans;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  text-align: center;
+  /*border: 5px solid brown;*/
+}
+
+/***********************/
+/*Classes*/
+/***********************/
+.bouton {
+text-align: center;
+color : pink;
+margin: 1px;
+  width:95%;
+}
+
+/***********************/
+/*IDs*/
+/***********************/
+#test_div{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+width:60%;
+
+text-align: center;
+/*border: 5px solid yellow;*/
+margin: 5px;
+}
+
+#label_question{
+  width:95%;
+  text-align: center;
+  border: 5px solid black;
+  margin: 1px;
+
+}
+
+#input_reponse {
+  width:95%;
+  text-align: center;
+  border: 0px;
+  margin: 1px;
+  background-color: WhiteSmoke;
 }

@@ -2,26 +2,26 @@
 <html>
 
 <head>
-  <title>Parcel Sandbox</title>
+  <title>Easy calculus</title>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script src="data.js"></script>
-  <script src="fonctions.js"></script>
-  <script src="main.js"></script>
 
-  <label id='label_question'>Prête à commencer ?</label>
-  <input type="hidden" id="input_reponse">
-  <button id="bouton_reponse" onclick="nouveautour()">Oui je commence</button>
-  <label id='label_commentaires' type="hidden">Commentaires</label>
-
-  <br>
-  <label id='reste_a_tester'>Reste à tester </label>
-
-
-
+  <div id='test_div'>
+    <label id='label_question'>On se lance ?</label>
+    <input type="hidden" id="input_reponse">
+    <button id="bouton_reponse" class="bouton" onclick="nouveautour()">GO !!</button>
+    <label id='label_commentaires' type="hidden">Commentaires</label>
+    <label id='reste_a_tester'>Reste à tester </label>
+  </div>
 
 </body>
+
+<script src="data.js"></script>
+<script src="fonctions.js"></script>
+<script src="main.js"></script>
 
 </html>

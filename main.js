@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////////
+//Etats
+/////////////////////////////////////////////////////////////
+
+/*
+0 : pas encore commencé
+1: préparation et affichage de la question
+2: traitement de la réponse et affichage correspondant
+3: terminé
+*/
+let GAME_STATUS=0;
+
+
 //création d'un tableau qui va servir à lister les éléments à interroger déjà tirés
 let liste_elements_restants=[];
 initialisation_elements_restants();
@@ -8,6 +21,9 @@ let switch_qr=1;
 
 let indice_test=0;
 
+var son_nok = new Audio('367760__johandeecke__fx-clankibuzz-hit.wav');
+var son_ok = new Audio('252681__jomellejager__magic-sound-1.wav');
+var son_click = new Audio('176727__yottasounds__pop.wav');
 
 /////////////////////////////////////////////////////////////
 //Main
