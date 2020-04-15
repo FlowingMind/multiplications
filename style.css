@@ -2,7 +2,7 @@
 /*Sélecteur de tous les éléments du document*/
 * {
   font-family: 'Teko', sans-serif;
-  font-size: 160%;
+  font-size: 100%;
   background-color: white;
 }
 
@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-
   text-align: center;
   /*border: 5px solid brown;*/
 }
@@ -29,24 +28,31 @@ body {
 text-align: center;
 color : pink;
 margin: 1px;
-  width:95%;
+width:95%;
 }
 
-/***********************/
-/*IDs*/
-/***********************/
-#test_div{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 
 width:60%;
 
 text-align: center;
 /*border: 5px solid yellow;*/
 margin: 5px;
+}
+
+/***********************/
+/*IDs*/
+/***********************/
+
+#container_test_questions{
+  font-family: 'Teko', sans-serif;
+  font-size: 160%;
+  background-color: white;
 }
 
 #label_question{
@@ -63,4 +69,8 @@ margin: 5px;
   border: 0px;
   margin: 1px;
   background-color: WhiteSmoke;
+}
+
+.table_choix{
+  font-size: 50%;
 }

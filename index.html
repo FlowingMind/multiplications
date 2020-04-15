@@ -10,13 +10,180 @@
 
 <body>
 
-  <div id='test_div'>
-    <label id='label_question'>On se lance ?</label>
-    <input type="hidden" id="input_reponse">
-    <button id="bouton_reponse" class="bouton" onclick="nouveautour()">GO !!</button>
-    <label id='label_commentaires' type="hidden">Commentaires</label>
-    <label id='reste_a_tester'>Reste à tester </label>
+    <div id='container_test_questions' class='container'>
+      <label id='label_question'>On se lance ?</label>
+      <input type="hidden" id="input_reponse">
+      <button id="bouton_reponse" class="bouton" onclick="nouveautour()">GO !!</button>
+      <label id='label_commentaires' type="hidden">Commentaires</label>
+      <label id='reste_a_tester'>Reste à tester </label>
   </div>
+
+  <div id='container_choix_questions' class='container'>
+    Choisis tes tables !!
+      <table id=table_choix>
+          <tr>
+              <td>Addition </td>
+              <td>Soustraction </td>
+              <td>Multiplication </td>
+              <td>Division (ne pas utiliser) </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_1" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">1</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_1" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">1</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_1" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">1</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_1" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">1</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_2" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">2</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_2" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">2</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_2" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">2</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_2" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">2</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_3" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">3</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_3" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">3</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_3" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">3</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_3" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">3</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_4" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">4</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_4" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">4</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_4" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">4</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_4" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">4</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_5" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">5</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_5" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">5</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_5" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">5</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_5" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">5</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_6" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">6</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_6" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">6</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_6" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">6</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_6" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">6</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_7" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">7</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_7" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">7</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_7" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">7</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_7" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">7</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_8" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">8</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_8" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">8</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_8" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">8</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_8" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">8</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_9" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">9</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_9" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">9</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_9" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">9</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_9" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">9</button>
+              </td>
+          </tr>
+
+          <tr>
+              <td>
+                <button id="bouton_table_addition_10" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">10</button>
+              </td>
+              <td>
+                <button id="bouton_table_soustraction_10" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">10</button>
+              </td>
+              <td>
+                <button id="bouton_table_multiplication_10" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">10</button>
+              </td>
+              <td>
+                <button id="bouton_table_division_10" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">10</button>
+              </td>
+          </tr>
+
+      </table>
+      <br>
+      <button id="bouton_table_go" class="bouton_choix" onclick="click_bouton_choix_table(this.id)">GO !!</button>
+
+  </div>
+
 
 </body>
 

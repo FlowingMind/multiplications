@@ -3,19 +3,19 @@
 /////////////////////////////////////////////////////////////
 
 /*
-0 : pas encore commencé
-1: préparation et affichage de la question
-2: traitement de la réponse et affichage correspondant
-3: terminé
+1: choix des questions
+2: préparation et affichage de la question
+3: traitement de la réponse et affichage correspondant
+4: terminé
 */
-let GAME_STATUS=0;
+let GAME_STATUS=1;
 
-
+/////////////////////////////////////////////////////////////
 //création d'un tableau qui va servir à lister les éléments à interroger déjà tirés
 let liste_elements_restants=[];
-initialisation_elements_restants();
-
 let liste_mauvaises_reponses=[];
+
+let nombre_questions_choisies=0;
 
 let switch_qr=1;
 
@@ -33,13 +33,16 @@ document.addEventListener("DOMContentLoaded", function(event0)
   {
    console.log("DOM fully loaded and parsed");
 
-   //masquage des éléments inutiles de la page
-   document.getElementById('label_question'). style.visibility = 'visible';
-   document.getElementById('input_reponse'). style.visibility = 'hidden';
-   document.getElementById('bouton_reponse'). style.visibility = 'visible';
-   document.getElementById('reste_a_tester'). style.visibility = 'hidden';
-   document.getElementById('label_commentaires'). style.visibility = 'hidden';
+   document.getElementById('container_test_questions').style.display = 'none';
 
+   //masquage des éléments inutiles de la page
+   document.getElementById('label_question').style.visibility = 'visible';
+   document.getElementById('input_reponse').style.visibility = 'hidden';
+   document.getElementById('bouton_reponse').style.visibility = 'visible';
+   document.getElementById('reste_a_tester').style.visibility = 'hidden';
+   document.getElementById('label_commentaires').style.visibility = 'hidden';
+
+   document.getElementById('container_test_questions').style.display = 'none';
 
    /////////////////////////////////////////////////////////////
    // Détection des évènements
@@ -47,14 +50,12 @@ document.addEventListener("DOMContentLoaded", function(event0)
    //listener de l'action keydown
    document.addEventListener("keydown", function(event)
     {
-
      //touche entrée
      if (event.which === 13 || event.keyCode === 13 || event.key === "Enter")
       {
       nouveautour();
       }
-
     });
 
-
+  //fin du main
   });
